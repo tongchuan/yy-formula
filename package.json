@@ -1,0 +1,20 @@
+{
+  "name": "yy-formula",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tongchuan/yy-formula.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tongchuan/yy-formula/issues"
+  },
+  "homepage": "https://github.com/tongchuan/yy-formula#readme"
+}
