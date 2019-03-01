@@ -1,20 +1,51 @@
 {
   "name": "yy-formula",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "React formula",
+  "main": "./lib/index",
+  "module": "./es/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rc-tools run storybook-build",
+    "compile": "rc-tools run compile --babel-runtime",
+    "gh-pages": "npm run build && rc-tools run storybook-gh-pages",
+    "start": "rc-tools run storybook",
+    "pub": "rc-tools run pub --babel-runtime",
+    "lint": "rc-tools run lint",
+    "lint:fix": "rc-tools run lint --fix",
+    "prettier": "rc-tools run prettier",
+    "test": "rc-tools run test",
+    "prepublish": "rc-tools run guard",
+    "init-tslint": "rc-tools run gen-lint-config",
+    "init-storybook": "rc-tools run genStorybook",
+    "coverage": "rc-tools run test --coverage",
+    "pre-commit": "rc-tools run pre-commit",
+    "storybook": "rc-tools run storybook",
+    "lint-staged": "lint-staged"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tongchuan/yy-formula.git"
   },
-  "keywords": [],
-  "author": "",
+  "config": {
+    "port": 8000
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "react-formula",
+    "formula"
+  ],
+  "author": "tongchuanzhang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tongchuan/yy-formula/issues"
   },
-  "homepage": "https://github.com/tongchuan/yy-formula#readme"
+  "homepage": "https://github.com/tongchuan/yy-formula#readme",
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "prop-types": "^15.7.2",
+    "rc-tools": "^9.3.11",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
 }
