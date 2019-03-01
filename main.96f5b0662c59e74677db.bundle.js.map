@@ -1,1 +1,0 @@
-{"version":3,"file":"main.96f5b0662c59e74677db.bundle.js","sources":["webpack:///./src/Formual.jsx"],"sourcesContent":["import React from 'react';\nimport ReactDOM from 'react-dom';\n\nexport default class Formual extends React.Component {\n\trender(){\n\t\treturn (\n\t\t\t<div>Formual</div>\n\t\t)\n\t}\n}"],"mappings":"AAGA","sourceRoot":""}
