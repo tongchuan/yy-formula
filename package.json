@@ -1,6 +1,6 @@
 {
   "name": "yy-formula",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "yonyon fs ui component for react",
   "keywords": [],
   "files": [
@@ -19,7 +19,8 @@
     "storybook": "rc-tools run storybook-build",
     "compile": "rc-tools run compile --babel-runtime",
     "start": "rc-tools run start",
-    "gh-pages": "npm run build && rc-tools run gh-pages"
+    "gh-pages": "npm run build && rc-tools run gh-pages",
+    "pre-commit": "rc-tools run pre-commit"
   },
   "author": "tongchuan",
   "license": "MIT",
