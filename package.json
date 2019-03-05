@@ -1,0 +1,53 @@
+{
+  "name": "yy-formulas",
+  "version": "1.0.0",
+  "description": "yonyon fs ui component for react",
+  "keywords": [],
+  "files": [
+    "assets/*.css",
+    "dist",
+    "es",
+    "lib"
+  ],
+  "main": "./lib/index",
+  "module": "./es/index",
+  "scripts": {
+    "dist": "rc-tools run dist",
+    "build": "rc-tools run build",
+    "build2": "rc-tools run storybook-build",
+    "compile": "rc-tools run compile --babel-runtime",
+    "start": "rc-tools run start",
+    "gh-pages": "rc-tools run gh-pages"
+  },
+  "author": "tongchuan",
+  "license": "MIT",
+  "config": {
+    "port": 8000,
+    "entry": {
+      "yy-formulas": [
+        "./assets/index.less",
+        "./src/index.js"
+      ]
+    }
+  },
+  "dependencies": {
+    "mini-store": "^2.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "lint-staged": "^8.1.4",
+    "rc-tools": "^9.3.11"
+  },
+  "lint-staged": {
+    "*.{js,jsx,tsx}": [
+      "npm run pre-commit",
+      "git add"
+    ]
+  },
+  "pre-commit": [
+    "lint-staged"
+  ]
+}
