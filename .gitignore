@@ -30,3 +30,4 @@ yarn.lock
 es/
 package-lock.json
 .prettierrc
+*.bak

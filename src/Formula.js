@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import { Provider } from 'mini-store';
+import { polyfill } from 'react-lifecycles-compat'
 
 // import { Provider, create, connect } from 'mini-store';
 // class Formulas extends React.Component {
@@ -36,7 +37,7 @@ import { Provider } from 'mini-store';
 // }
 
 // export default Formulas;
-export default class Formulas extends React.Component {
+class Formula extends React.Component {
   static propTypes = {
     name: PropTypes.string,
   };
@@ -67,6 +68,9 @@ export default class Formulas extends React.Component {
   }
 }
 
+polyfill(Formula)
+
+export default Formula
 // Formulas.DefaultProps = {
 //   name: '111',
 // };
