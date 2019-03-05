@@ -1,30 +1,32 @@
 {
-  "name": "yy-formulas",
-  "version": "1.0.0",
+  "name": "yy-formula",
+  "version": "1.0.2",
   "description": "yonyon fs ui component for react",
   "keywords": [],
   "files": [
     "assets/*.css",
-    "dist",
+    "assets/*.png",
+    "assets/*.gif",
     "es",
     "lib"
   ],
   "main": "./lib/index",
   "module": "./es/index",
   "scripts": {
-    "dist": "rc-tools run dist",
+    "version": "npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]",
     "build": "rc-tools run build",
-    "build2": "rc-tools run storybook-build",
+    "pub": "rc-tools run pub",
+    "storybook": "rc-tools run storybook-build",
     "compile": "rc-tools run compile --babel-runtime",
     "start": "rc-tools run start",
-    "gh-pages": "rc-tools run gh-pages"
+    "gh-pages": "npm run build && rc-tools run gh-pages"
   },
   "author": "tongchuan",
   "license": "MIT",
   "config": {
     "port": 8000,
     "entry": {
-      "yy-formulas": [
+      "yy-formula": [
         "./assets/index.less",
         "./src/index.js"
       ]
@@ -37,8 +39,8 @@
     "react-dom": "^16.8.3"
   },
   "devDependencies": {
-    "pre-commit": "^1.2.2",
     "lint-staged": "^8.1.4",
+    "pre-commit": "^1.2.2",
     "rc-tools": "^9.3.11"
   },
   "lint-staged": {
