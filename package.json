@@ -1,6 +1,6 @@
 {
   "name": "yy-formula",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "yonyon fs ui component for react",
   "keywords": [],
   "files": [
@@ -13,7 +13,7 @@
   "main": "./lib/index",
   "module": "./es/index",
   "scripts": {
-    "version": "npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]",
+    "version4444": "npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]",
     "build": "rc-tools run build",
     "pub": "rc-tools run pub",
     "storybook": "rc-tools run storybook-build",
