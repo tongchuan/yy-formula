@@ -1,6 +1,6 @@
 {
   "name": "yy-formula",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "yonyon fs ui component for react",
   "keywords": [],
   "files": [
@@ -43,14 +43,5 @@
     "lint-staged": "^8.1.4",
     "pre-commit": "^1.2.2",
     "rc-tools": "^9.3.11"
-  },
-  "lint-staged": {
-    "*.{js,jsx,tsx}": [
-      "npm run pre-commit",
-      "git add"
-    ]
-  },
-  "pre-commit": [
-    "lint-staged"
-  ]
+  }
 }
