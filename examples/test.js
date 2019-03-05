@@ -124,15 +124,22 @@ function (_React$Component) {
   _inherits(Demo, _React$Component);
 
   function Demo(props) {
+    var _this;
+
     _classCallCheck(this, Demo);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Demo).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Demo).call(this, props));
+    _this.state = {
+      name: '2222'
+    };
+    return _this;
   }
 
   _createClass(Demo, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Demo");
+      var name = this.state.name;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, name, "Demo");
     }
   }]);
 
